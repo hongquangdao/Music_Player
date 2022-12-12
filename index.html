@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music-App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https:fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top-bar">
+        <i class="material-icons">expand_more</i>
+        <span>Now playing</span>
+        <i class="material-icons">more_horiz</i>
+      </div>
+      <div class="img-area">
+        <img src="/images/image2.jpg" alt="image" />
+      </div>
+      <div class="song-details">
+        <p class="name">toi da di 1/3 cuoc doi</p>
+        <p class="artist">quang</p>
+      </div>
+      <div class="progress-area">
+        <div class="progress-bar"></div>
+        <div class="timer">
+          <span class="current">01</span>
+          <span class="current">02</span>
+        </div>
+        <audio id="main-audio" src=""></audio>
+      </div>
+      <div class="controls">
+        <i id="repeat-plist" class="material-icons">repeat</i>
+        <i id="prev" class="material-icons">skip_previous</i>
+        <div class="play-pause">
+          <i class="material-icons">play_arrow</i>
+        </div>
+        <i id="next" class="material-icons">skip_next</i>
+        <i id="more-music" class="material-icons">queue_music</i>
+      </div>
+      <div class="music-list">
+        <div class="header">
+          <div class="row">
+            <i class="material-icons">queue_music</i>
+            <span>Music-list</span>
+          </div>
+          <i id="close" class="material-icons">close</i> 
+        </div>
+        <ul>
+          <li>
+            <div class="row">
+              <span>Tam su tuoi 30</span>
+              <p>Trinh Thanh Binh</p>
+            </div>
+            <span class="audio-duration">3:40</span>
+          </li>
+          <li>
+            <div class="row">
+              <span>Anh đang ở đâu đấy</span>
+              <p>Lưu Hương Giang</p>
+            </div>
+            <span class="audio-duration">3:46</span>
+          </li>
+          <li>
+            <div class="row">
+              <span>Anh vẫn chờ e</span>
+              <p>Mono</p>
+            </div>
+            <span class="audio-duration">3:50</span>
+          </li>
+          <li>
+            <div class="row">
+              <span>Time to love</span>
+              <p>T-ara</p>
+            </div>
+            <span class="audio-duration">3:35</span>
+          </li>
+          <li>
+            <div class="row">
+              <span>Tam su tuoi 30</span>
+              <p>Trinh Thanh Binh</p>
+            </div>
+            <span class="audio-duration">4:10</span>
+          </li>
+          <li>
+            <div class="row">
+              <span>Tam su tuoi 30</span>
+              <p>Trinh Thanh Binh</p>
+            </div>
+            <span class="audio-duration">4:10</span>
+          </li>
+          <li>
+            <div class="row">
+              <span>Tam su tuoi 30</span>
+              <p>Trinh Thanh Binh</p>
+            </div>
+            <span class="audio-duration">4:10</span>
+          </li>
+          <li>
+            <div class="row">
+              <span>Tam su tuoi 30</span>
+              <p>Trinh Thanh Binh</p>
+            </div>
+            <span class="audio-duration">4:10</span>
+          </li>
+          <li>
+            <div class="row">
+              <span>Tam su tuoi 30</span>
+              <p>Đỗ Thành Tiên</p>
+            </div>
+            <span class="audio-duration">5:10</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/music-list.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
