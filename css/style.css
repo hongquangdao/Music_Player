@@ -90,13 +90,13 @@ body {
 .progress-area {
   height: 6px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #ece5e5;
   border-radius: 50px;
   cursor: pointer;
 }
 .progress-area .progress-bar {
   height: inherit;
-  width: 60%;
+  width: 0%;
   position: relative;
   border-radius: inherit;
   background: linear-gradient(90deg, var(--pink) 0%, var(--violet));
