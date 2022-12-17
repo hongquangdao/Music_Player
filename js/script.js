@@ -8,6 +8,13 @@ nextBtn = wrapper.querySelector("#next");
 prevBtn = wrapper.querySelector("#prev");
 progressBar = wrapper.querySelector(".progress-bar");
 progressArea = wrapper.querySelector(".progress-area");
+musisList = wrapper.querySelector(".music-list");
+showMoreBtn = wrapper.querySelector("#more-music");
+hideMusicBtn = musisList.querySelector("#close");
+
+showMoreBtn.addEventListener("click", () => {
+  musisList.classList.toggle("show");
+});
 
 let musicIndex = 1;
 
@@ -145,13 +152,13 @@ mainAudio.addEventListener("ended", () => {
       playMusic();
       break;
     case "shuffle":
-      let randIndex = Math.floor((Math.random() * allMusic.length) + 1);
-      do{
-        randIndex = Math.floor((Math.random() * allMusic.length) + 1);
-      }while (musicIndex == randIndex);
+      let randIndex = Math.floor(Math.random() * allMusic.length + 1);
+      do {
+        randIndex = Math.floor(Math.random() * allMusic.length + 1);
+      } while (musicIndex == randIndex);
       musicIndex = randIndex;
       loadMusic(musicIndex);
-      playMusic()
+      playMusic();
       break;
   }
 });
